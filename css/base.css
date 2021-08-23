@@ -133,3 +133,54 @@ nav{
  /* NAV END */
 /***********/
 
+a{
+    text-decoration: none;
+    color: mediumblue;
+}
+main a:hover{text-decoration: underline;}
+.results-link:not(.results-link-homepage):hover{
+    text-decoration: underline;
+}
+a cite{
+    color: black;
+    font-style: normal;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.results-pages-letter{
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.results-pages-letter.-g{
+    color:var(--blue);
+}
+.results-pages-letter.-o{
+    color:var(--yellow);
+}
+.results-pages-letter.-l{
+    color:var(--green);
+}
+.results-pages-letter.-e{
+    color:var(--red);
+}
+
+.results-pages-letter.-isActive{
+    color:var(--red);
+}
+.pagesList-indication{
+    font-size: 1rem;
+    color: var(--blue)
+}
+
+
+
+
+
+/* STATES */
+.is-hidden{
+    display: none;
+}
