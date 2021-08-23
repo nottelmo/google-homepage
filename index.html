@@ -22,18 +22,20 @@
 
 	<body>
 		<nav>
-			<a id="nav--logo" href="" >
-				<img src="googlelogo_color_92x30dp.png" alt="google logo">
+			<a id="nav-logo" href="" >
+				<img class="nav-logo-img" src="googlelogo_color_92x30dp.png" alt="google logo">
 			</a>
-			<form id="nav--search" action="">
-				<input type="text" value="The Odin Project" id="nav--searchBar">
-				<input type="submit" value="" id="nav--clearSearch">
-				<input type="submit" value="" id="nav--toggleOnScreenKeyboard">
-				<input type="submit" value="" id="nav--searchButton">
+			<form id="nav-search" action="">
+				<input type="text" value="The Odin Project" id="nav-searchBar">
+				<div class="nav-searchActions">
+					<input type="reset" value="" id="nav-clearSearch" class="nav-searchAction">
+					<input type="submit" value="" id="nav-searchButton" class="nav-searchAction">
+				</div>
 			</form>
-			<div>
-				<img src="placeholder-icon.svg" alt="gear icon" >
-				<div id="nav--settingsList">
+
+			<div id="nav-settings" class="nav-menu">
+				<img src="placeholder-icon.svg" alt="gear icon" id="nav-settings-icon" class="nav-menu-icons" title="Settings">
+				<div id="nav-settingsList" class="is-hidden">
 					<a href="" >Search Settings</a>
 					<a href="" >Languages</a>
 					<a href="" >Hide Explicit Results</a>
@@ -45,9 +47,10 @@
 					<a href="" >Appearance: Light Theme</a>
 				</div>
 			</div>
-			<div>
-				<img src="placeholder-icon.svg" alt="app grid icon" >
-				<div id="nav--appGridList">
+
+			<div id="nav-appGrid" class="nav-menu">
+				<img src="placeholder-icon.svg" alt="app grid icon" id="nav-appGrid-icon" class="nav-menu-icons" title="Google Apps">
+				<div id="nav-appGridList" class="is-hidden">
 					<div >
 						<a href="" >
 							<img src="placeholder-icon.svg" alt="" >Account
@@ -169,6 +172,18 @@
 					<hr>
 					
 					<a href="">More from Google</a>
+				</div>
+			</div>
+
+			<div id="nav-account" class="nav-menu">
+				<img src="placeholder-icon.svg" alt="profile picture" id="nav-account-icon" class="nav-menu-icons" title="Google Account&#013Telmo Silva">
+				<div id="nav-account-content" class="is-hidden">
+					<img src="placeholder-icon.svg" alt="profile picture" id="nav-account-picture">
+					<h4 class="account-name">Telmo Silva</h4>
+					<p class="account-email">not.telmo@gmail.com</p>
+					<a href="https://nottelmo.com" class="account-website">Website!</a>
+					<hr>
+					<a href="https://github.com/nottelmo" class="account-github">Github</a>
 				</div>
 			</div>
 		</nav>
