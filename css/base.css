@@ -17,3 +17,106 @@
         local('OpenSans'),
         url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   }
+
+
+  /**************/
+ /* NAV START */
+/************/
+
+nav{
+    background-color: white;
+    display: grid;
+    height: 100px;
+    overflow: hidden;
+
+    grid-template-columns: repeat(24, minmax(0,1fr));
+    grid-template-rows: 100px;
+}
+#nav-logo{
+    grid-column: 1 / 4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo-img{
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+    margin-right: 40px;
+}
+#nav-search{
+    grid-column: 4 / 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#nav-searchBar{
+    width: 100%;
+    margin-left: -20px;
+    height: 45px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 8px var(--shadowBackground-visible);
+    font-size: 16px;
+}
+#nav-searchBar:focus-visible, #nav-searchBar:hover{
+    box-shadow: 0 2px 8px var(--shadowBackground-hover);
+    outline: none;
+}
+.nav-searchActions{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-searchAction{
+    background-color: white;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background-image: url('../placeholder-icon.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav-searchAction:hover{
+    cursor: pointer;
+}
+.nav-searchAction:nth-child(2){
+    border-radius: 0 40px 40px 0;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu-icons{
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 100%;
+}
+.nav-menu-icons:hover{
+    background-color: var(--shadowBackground-visible);
+}
+.nav-menu:nth-of-type(1){
+    grid-column: 22 / 23;
+}
+.nav-menu:nth-of-type(2){
+    grid-column: 23 / 24;
+}
+.nav-menu-icons:nth-of-type(3){
+    grid-column: 23 / 24;
+}
+
+  /***********/
+ /* NAV END */
+/***********/
+
