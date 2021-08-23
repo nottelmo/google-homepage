@@ -1,0 +1,9 @@
+:root{
+    --blue: #4285F4;
+    --red: #EA4335;
+    --yellow: #FBBC05;
+    --green: #34A853;
+
+    --shadowBackground-visible: rgba(0,0,0,0.1);
+    --shadowBackground-hover: rgba(0,0,0,0.2);
+}
